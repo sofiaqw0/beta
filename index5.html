@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana Del Rey</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="menu-principal">
+        <div class="contenido-header">
+            <h1 class="titulo">Lana Del Rey</h1>
+            <nav class="menu">
+                <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index2.html">BIOGRAFIA</a></li>
+                <li><a href="index3.html">DISCOGRAFIA</a></li>
+                <li><a href="index4.html">INFLUENCIA EN LA MUSICA</a></li>
+                <li><a href="index5.html">MET GALA</a></li>
+                <li><a href="index6.html">PREMIOS-NOMINACIONESS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+
+<section class="row bg-white no-margin discografia">
+  <div class="Met-grid">
+    <div class="album">
+      <img src="img/met1.jpeg" alt="Met Gala" onclick="abrirVideo('img/video1.mp4')">
+      <h3>Schiaparelli y Prada: conversaciones imposibles</h3>
+      <p>2012</p>
+    </div>
+    <div class="album">
+      <img src="img/met2.jpeg" alt="Met Gala" onclick="abrirVideo('img/video2.mp4')">
+      <h3>Cuerpos celestiales: la moda y el imaginario católico</h3>
+      <p>2018</p>
+    </div>
+    <div class="album">
+      <img src="img/met3.jpeg" alt="Met Gala" onclick="abrirVideo('img/video3.mp4')">
+      <h3>Bellezas o Bellas durmientes: el redespertar de la moda.</h3>
+      <p>2024</p>
+    </div>
+    <div class="album">
+      <img src="img/met4.jpeg" alt="Met Gala" onclick="abrirVideo('img/video4.mp4')">
+      <h3>Superfino: el arte de la sastrería en el dandismo negro</h3>
+      <p>2025</p>
+    </div>
+  </div>
+</section>
+
+<!-- Popup del video -->
+<div class="video-popup" id="popup">
+  <div class="popup-content">
+    <span class="cerrar" onclick="cerrarVideo()">X</span>
+    <center><video id="video" controls autoplay></video></center>
+  </div>
+</div>
+
+<script>
+  function abrirVideo(ruta) {
+    const popup = document.getElementById('popup');
+    const video = document.getElementById('video');
+    video.src = ruta;
+    popup.style.display = 'flex';
+  }
+
+  function cerrarVideo() {
+    const popup = document.getElementById('popup');
+    const video = document.getElementById('video');
+    popup.style.display = 'none';
+    video.pause();
+    video.currentTime = 0;
+  }
+</script>
+
+
+    <footer class="pie">
+        <p>@soffyy.s</p>
+    </footer>
+
+</body>
+</html>

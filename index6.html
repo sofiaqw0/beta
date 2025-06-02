@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana Del Rey</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="menu-principal">
+        <div class="contenido-header">
+            <h1 class="titulo">Lana Del Rey</h1>
+            <nav class="menu">
+                <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index2.html">BIOGRAFIA</a></li>
+                <li><a href="index3.html">DISCOGRAFIA</a></li>
+                <li><a href="index4.html">INFLUENCIA EN LA MUSICA</a></li>
+                <li><a href="index5.html">MET GALA</a></li>
+                <li><a href="index6.html">PREMIOS-NOMINACIONES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+
+   <section class="premios">
+  <div class="premios-grid">
+
+    <div class="premio-card">
+      <img src="img/BritAwards.jpg" alt="Grammy" onclick="abrirVideo('img/video5.mp4')">
+      <div class="texto-premio">
+        <h3>Brit Awards</h3>
+        <p>2012 – Lana Del Rey posando con su premio a Artista Revelación Internacional </p>
+      </div>
+    </div>
+
+    <div class="premio-card">
+      <img src="img/ECHO.jpg" alt="MTV Award" onclick="abrirVideo('img/video6.mp4')">
+      <div class="texto-premio">
+        <h3>ECHO Awards (Alemania)</h3>
+        <p>2013 – Lana Del Rey fue galardonada como Mejor Artista Femenina Internacional de Rock/Pop.</p>
+      </div>
+    </div>
+
+    <div class="premio-card">
+      <img src="img/grammys.jpg" alt="BRIT Award" onclick="abrirVideo('img/video7.mp4')">
+      <div class="texto-premio">
+        <h3>Premios Grammy</h3>
+        <p>2018 – Lana Del Rey en la alfombra roja de los Premios Grammy, luciendo un vestido de Gucci con detalles astrales</p>
+      </div>
+    </div>
+
+    <div class="premio-card">
+      <img src="img/Variety.jpg" alt="BRIT Award" onclick="abrirVideo('img/video8.mp4')">
+      <div class="texto-premio">
+        <h3>Variety Hitmakers Awards</h3>
+        <p>2021 – Lana Del Rey aceptando el premio a Artista de la Década</p>
+      </div>
+    </div>
+
+    <div class="premio-card">
+      <img src="img/Billboard.jpg" alt="BRIT Award" onclick="abrirVideo('img/video9.mp4')">
+      <div class="texto-premio">
+        <h3>Billboard Women in Music</h3>
+        <p>2023 – Lana Del Rey recibiendo el Visionary Award en los Billboard Women in Music Awards</p>
+      </div>
+    </div>
+
+    <div class="premio-card">
+      <img src="img/grammy2024.jpg" alt="BRIT Award" onclick="abrirVideo('img/video10.mp4')">
+      <div class="texto-premio">
+        <h3>Premios Grammy</h3>
+        <p>2024 – Lana Del Rey en los Premios Grammy, luciendo un vestido negro con detalles coquette</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Popup del video -->
+<div class="video-popup" id="popup">
+  <div class="popup-content">
+    <span class="cerrar" onclick="cerrarVideo()">X</span>
+    <center><video id="video" controls autoplay></video></center>
+  </div>
+</div>
+
+<script>
+  function abrirVideo(ruta) {
+    const popup = document.getElementById('popup');
+    const video = document.getElementById('video');
+    video.src = ruta;
+    popup.style.display = 'flex';
+  }
+
+  function cerrarVideo() {
+    const popup = document.getElementById('popup');
+    const video = document.getElementById('video');
+    popup.style.display = 'none';
+    video.pause();
+    video.currentTime = 0;
+  }
+</script>
+
+
+    <footer class="pie">
+        <p>@soffyy.s</p>
+    </footer>
+
+</body>
+</html>

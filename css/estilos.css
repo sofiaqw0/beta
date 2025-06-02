@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+
+body, html {
+    margin: 10px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Fuente general */
+}
+.pie{
+    color: #75070C;
+    background-color: #FFD9D9;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    
+}
+.menu-principal {
+    background-color: #FFD9D9;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.contenido-header {
+    position: relative;
+    z-index: 1;
+}
+
+.titulo {
+    color: #75070C;
+    margin: 0 0 20px;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif; /* Fuente del título */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu ul li a {
+    color: #75070C;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Fuente del menú */
+}
+
+.menu ul li a:hover {
+    color: black;
+}
+
+.foto-lana {
+    display: flex;
+    margin: 40px 0 20px;
+}
+
+.foto-lana img {
+    width: 300px;
+    max-width: 90%;
+    height: auto;
+    margin-right: 40px; 
+    margin-left: 30px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.foto-lana img:hover {
+    transform: scale(1.05);
+}
+
+  .contenido-inicio h1 {
+    color: black;
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .contenido-inicio p {
+    color: black;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+.discografia {
+    padding: 40px 20px;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+    
+}
+
+/* styles.css */
+.Met-grid {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 20px;
+  padding: 20px;
+
+}
+.album {
+    text-align: center;
+    background-color: #fdf1f4;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.album:hover {
+    transform: scale(1.05);
+}
+
+.album img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.album h3 {
+    margin: 10px 0 5px;
+    font-size: 1.4em;
+    font-family: 'Ancizar Serif', serif;    color: #750026;
+}
+
+.album p {
+    color: #888;
+}
+
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+}
+
+.popup-content video {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.cerrar {
+  position: absolute;
+  top: -30px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 20px;
+  padding: 5px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+}
+
+.premios {
+  background-color: white;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.premios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.premio-card {
+  background-color: #fdf1f4;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.premio-card:hover {
+  transform: translateY(-8px);
+}
+
+.premio-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-premio h3 {
+  font-size: 1.2em;
+  color: #A12341;
+  margin: 10px 0 5px;
+}
+
+.texto-premio p {
+  font-size: 0.95em;
+  color: #444;
+}
+
+.foto-Bio {
+    display: flex;
+    justify-content: left; 
+    margin: 40px 0 20px;
+}
+
+.foto-Bio img {
+    width: 500px;
+    height: 500px;
+    margin-right: 40px; 
+    margin-left: 30px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.foto-Bio img:hover {
+    transform: scale(1.05);
+}
+
+  .contenido-Bio h1 {
+    color: #750026;
+    font-size: 3em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .contenido-Bio p {
+    color: black;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .contenedor-canciones {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; 
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+
+ .lista-canciones {
+  font-family: 'Raleway', sans-serif; 
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fdf1f4;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.lista-canciones h2 {
+  font-family: 'Playfair Display', serif;
+  color: #750026;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lista-canciones ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-canciones li::before {
+  content: "♪ ";
+  color: #A12341;
+  margin-right: 8px;
+}
+
+.contenedor-canciones img {
+  width: 40%;
+  height: auto;
+  margin-top: 100px;
+  align-items: stretch
+}
+
+.musica-widget {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.video-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.video-section img {
+    width: 560px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.video-section img:hover {
+    transform: scale(1.02);
+}
+
+.video-section p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+
+@media (max-width: 480px) {
+  body, html {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .titulo,
+  .contenido-inicio h1,
+  .contenido-Bio h1 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .contenido-inicio p,
+  .contenido-Bio p {
+    font-size: 1em;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .menu ul li a {
+    font-size: 14px;
+  }
+
+  .album-grid,
+  .premios-grid,
+  .Met-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .foto-lana,
+  .foto-Bio,
+  .contenedor-canciones {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+
+  .foto-lana img,
+  .foto-Bio img,
+  .contenedor-canciones img,
+  .video-section img,
+  .popup-content video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .lista-canciones {
+    font-size: 1em;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .popup-content {
+    width: 95%;
+    padding: 0;
+  }
+
+  .cerrar {
+    top: -20px;
+    right: -5px;
+    font-size: 16px;
+    padding: 4px 10px;
+  }
+
+  .premio-card {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .video-section {
+    padding: 10px;
+  }
+
+  .contenido-inicio,
+  .contenido-Bio {
+    text-align: center;
+  }
+}
